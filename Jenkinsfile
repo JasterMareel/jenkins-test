@@ -1,5 +1,5 @@
 pipeline {
-    agent { dockerfile true }
+    agent { image 'btr:latest' }
     stages {
         stage('build.sh') {
             steps {
