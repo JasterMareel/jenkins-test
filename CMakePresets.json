@@ -1,0 +1,32 @@
+{
+    "version": 3,
+    "cmakeMinimumRequired": {
+      "major": 3,
+      "minor": 22,
+      "patch": 2
+    },
+    "configurePresets": [
+      {
+        "name": "default",
+        "binaryDir": "./build",
+        "cacheVariables": {
+          "WARNINGS_AS_ERRORS": "ON",
+          "PRESET_IN_USE": "ON",
+          "CMAKE_BUILD_TYPE": "RelWithDebInfo",
+          "CMAKE_EXPORT_COMPILE_COMMANDS": "ON"
+        },
+        "warnings": {
+          "dev": true
+        },
+        "errors": {
+          "dev": true
+        }
+      }
+    ],
+    "buildPresets": [
+      {
+        "name": "default",
+        "configurePreset": "default"
+      }
+    ]
+}
